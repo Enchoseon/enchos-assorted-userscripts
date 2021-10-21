@@ -1,5 +1,5 @@
 # Encho's Assorted Userscripts
-Assorted userscripts for random things.
+Assorted userscripts for random things not important enough to put in their own repository.
 
 ## 500px-downloadable-images.js
 
