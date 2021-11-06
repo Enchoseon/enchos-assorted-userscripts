@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name     	Disable Scroll Event in Google Slides When Using Touchpad
+// @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/blob/main/disable-scroll-event-in-google-slides-when-using-touchpad.user.js
 // @version  	1.0.0
 // @description Removes scroll event from #workspace-container in Google Slides when a touchpad is detected.
 // @author   	Enchoseon
@@ -7,7 +8,7 @@
 // @grant    	none
 // ==/UserScript==
 
-(function () {
+(function() {
     "use strict";
     function killScrollEvent() {
         if (document.getElementById("workspace-container") !== null) {
