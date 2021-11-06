@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         Piktochart Downloader
-// @namespace    https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/piktochart-downloader.user.js
-// @version      1.0.0
-// @description  Download Piktochart projects as many times as you want.
-// @author       Enchoseon
-// @include      *create.piktochart.com*
-// @run-at       document-start
-// @grant        none
-// @require      https://html2canvas.hertzen.com/dist/html2canvas.min.js
+// @name        Piktochart Downloader
+// @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/piktochart-downloader.user.js
+// @version     1.0.1
+// @description Download Piktochart projects as PNGs as many times as you want at any resolution you want. Doesn't get around CORs yet, so some elements may be missing.
+// @author      Enchoseon
+// @include     *create.piktochart.com*
+// @run-at      document-start
+// @grant       none
+// @require     https://html2canvas.hertzen.com/dist/html2canvas.min.js
 // ==/UserScript==
 
 (function() {
