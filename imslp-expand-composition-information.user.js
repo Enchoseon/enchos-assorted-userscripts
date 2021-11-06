@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        IMSLP Expand Composition Information
-// @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/blob/main/imslp-expand-composition-information.user.js
-// @version     1.0.2
+// @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/imslp-expand-composition-information.user.js
+// @version     1.0.3
 // @description Expands composition information in the IMSLP library.
 // @author      Enchoseon
 // @include     *imslp.org*
