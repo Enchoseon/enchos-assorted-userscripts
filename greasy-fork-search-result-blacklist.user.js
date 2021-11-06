@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name     	Greasy Fork Search Result Blacklist
-// @namespace	https://github.com/Enchoseon/enchos-assorted-userscripts/blob/main/greasy-fork-search-result-blacklist.js
+// @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/blob/main/greasy-fork-search-result-blacklist.user.js
 // @version  	1.0.0
-// @description  Remove irrelevant searches from Greasyfork.org.
+// @description Remove irrelevant searches from Greasyfork.org.
 // @author   	Enchoseon
 // @include  	*greasyfork.org*
-// @grant        GM_setValue
-// @grant        GM_getValue
-// @grant        GM_deleteValue
+// @grant       GM_setValue
+// @grant       GM_getValue
+// @grant       GM_deleteValue
 // @grant    	none
 
 (function() {
-    'use strict';
+    "use strict";
     // Default/demo blacklist
     var blacklistArr = GM_getValue("blacklistArr", [
         "agario",
