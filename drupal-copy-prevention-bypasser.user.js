@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name     	Drupal Copy Prevention Bypasser
-// @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/blob/main/drupal-copy-prevention-bypasser.user.js
-// @version  	1.0.0
+// @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/drupal-copy-prevention-bypasser.user.js
+// @version  	1.0.1
 // @description Bypass Drupal Copy Prevention on sites that use it.
 // @author   	Enchoseon
 // @include  	*
