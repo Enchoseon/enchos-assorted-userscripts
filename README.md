@@ -17,6 +17,10 @@ Bypass Drupal Copy Prevention on sites that use it.
 
 Remove irrelevant searches from Greasyfork.org.
 
+## [Igg-Games Anti-AdBlock Bypass](https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/igg-games-anti-adblock-bypass.user.js)
+
+Bypass Igg-Games anti-adblock.
+
 ## [IMSLP Expand Composition Information](https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/imslp-expand-composition-information.user.js)
 
 Expands composition information in the IMSLP library.
