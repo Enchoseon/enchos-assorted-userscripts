@@ -29,6 +29,6 @@ Expands composition information in the IMSLP library.
 
 Download Piktochart projects as PNGs as many times as you want at any resolution you want. Doesn't get around CORs yet, so some elements may be missing. Uses [html2canvas](https://github.com/niklasvh/html2canvas).
 
-## [Bandcamp Downloader](https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/bandcamp-downloader.user.js)
+## [Soundsnap Downloader](https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/soundsnap-downloader.user.js)
 
-Add download link to Bandcamp tracks.
+Add download link to Soundsnap previews.
