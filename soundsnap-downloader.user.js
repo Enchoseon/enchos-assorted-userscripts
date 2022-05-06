@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Soundsnap Downloader
 // @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/soundsnap-downloader.user.js
-// @version     0.7.0
+// @version     0.7.1
 // @description Add download link to Soundsnap previews.
 // @author      Enchoseon
 // @include     *soundsnap.com/search/audio?*
@@ -18,8 +18,10 @@
     const observer = new MutationObserver(function(mutations_list) {
         mutations_list.forEach(function(mutation) {
             mutation.addedNodes.forEach(function(added_node) {
+                if (added_node.id === "page-loader") {
+                    flag = false;
+                }
                 if (added_node.className === "ojoo-teaser") {
-                    observer.disconnect();
                     if (flag) {
                         return;
                     } else {
