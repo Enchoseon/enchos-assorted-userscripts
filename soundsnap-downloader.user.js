@@ -39,7 +39,7 @@
         // =========================
         const tracks = document.querySelectorAll("div.ojoo-teaser");
         tracks.forEach((track) => {
-            const downloadButton = track.querySelector("a.ss_icons.ss_download");
+            const downloadButton = track.querySelector("a.button-icon.teaser-icons.primary.ojoo-icon-download");
             console.log(downloadButton);
             downloadButton.removeAttribute("href");
             downloadButton.addEventListener("click", () => {
