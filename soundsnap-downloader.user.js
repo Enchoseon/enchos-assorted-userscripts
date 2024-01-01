@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Soundsnap Downloader
 // @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/soundsnap-downloader.user.js
-// @version     0.7.1
+// @version     1.0.0
 // @description Add download link to Soundsnap previews.
 // @author      Enchoseon
 // @include     *soundsnap.com/search/audio?*
