@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Soundsnap Downloader
 // @namespace   https://github.com/Enchoseon/enchos-assorted-userscripts/raw/main/soundsnap-downloader.user.js
-// @version     1.0.0
+// @version     1.1.0
 // @description Add download link to Soundsnap previews.
 // @author      Enchoseon
 // @include     *soundsnap.com/search/audio?*
@@ -14,20 +14,11 @@
     // =================
     // Mutation Observer
     // =================
-    var flag = false;
     const observer = new MutationObserver(function(mutations_list) {
         mutations_list.forEach(function(mutation) {
             mutation.addedNodes.forEach(function(added_node) {
-                if (added_node.id === "page-loader") {
-                    flag = false;
-                }
-                if (added_node.className === "ojoo-teaser") {
-                    if (flag) {
-                        return;
-                    } else {
-                        flag = true;
-                        start();
-                    }
+                if (added_node.classList && added_node.classList.contains("ojoo-teaser")) {
+                    start();
                 }
             });
         });
@@ -37,8 +28,9 @@
         // =========================
         // Intercept Download Button
         // =========================
-        const tracks = document.querySelectorAll("div.ojoo-teaser");
-        tracks.forEach((track) => {
+        document.querySelectorAll("div.ojoo-teaser").forEach((track) => {
+            if (track.dataset.processed) return;
+            track.dataset.processed = "true";
             const downloadButton = track.querySelector("a.button-icon.teaser-icons.primary.ojoo-icon-download");
             console.log(downloadButton);
             downloadButton.removeAttribute("href");
